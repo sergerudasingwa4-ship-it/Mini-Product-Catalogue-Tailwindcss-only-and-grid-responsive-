@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mini Product Catalogue</title>
+  </head>
+  <body>
+    <!-- The entire Design -->
+    <div class="max-w-[720px] mx-auto">
+      <!-- Navbar -->
+      <div class="flex justify-between items-center bg-gray-100">
+        <div>
+          <h2 class="text-4xl text-gray-700">
+            Serge.<span class="text-lg text-green-700">dev</span>
+          </h2>
+        </div>
+        <div class="flex gap-4">
+          <a class="text-brown" href="#">Products</a>
+          <a class="text-brown" href="#">Collection</a>
+        </div>
+      </div>
+
+      <!-- Hero section -->
+      <div class="text-center max-w-3xl mx-auto px-4 py-8">
+        <div>
+          <h2 class="text-4xl">50% Discount</h2>
+          <p class="text-lg">
+            Enjoy 50% off premium perfumes and find your signature floral,
+            citrus, or woody scent today before this exclusive deal ends.
+          </p>
+        </div>
+        <button class="p-2 bg-sky-500 rounded md text-white text-center mt-4">
+          Order now
+        </button>
+      </div>
+
+      <!-- Product grid — with six product cards -->
+      <!-- grid grid-cols-1 forces the product cards to stack vertically in a single column by default
+      on mobile phones. -->
+      <!-- md:grid-cols-3, md: prefix instructs Tailwind to apply three columns only when the screen 
+      width reaches 768px or wider. -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- The flex flex-col items-center added to each 1. card container  keeps all elements 
+         perfectly centered on mobile devices.-->
+        <div class="flex flex-col items-center">
+          <h2>Lolita Men $500</h2>
+          <p class="text-green-600 font-bold">Instock: 50 pieces</p>
+          <img src="parfum.jpeg" alt="parfum" class="w-80 rounded-md" />
+          <button class="bg-sky-500 rounded-md p-2 px-4 mt-4 text-white">
+            Buy
+          </button>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <h2>Jean Paul Gautier Female $800</h2>
+          <p class="text-red-500 font-medium">Instock: 30 pieces</p>
+          <img src="parfum.jpeg" alt="parfum" class="w-80 rounded-md" />
+          <button class="bg-sky-500 rounded-md p-2 px-4 mt-4 text-white">
+            Buy
+          </button>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <h2 class="">Lolita Men $800</h2>
+          <p class="text-orange-600 font-[900]">Instock: 72 pieces</p>
+          <img src="parfum.jpeg" alt="parfum" class="w-80 rounded-md" />
+          <button class="bg-sky-500 rounded-md p-2 px-4 mt-4 text-white">
+            Buy
+          </button>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <h2 class="">Lolita Women $1000</h2>
+          <p class="text-pink-600 font-[700]">Instock: 203 pieces</p>
+          <img src="parfum.jpeg" alt="parfum" class="w-80 rounded-md" />
+          <button class="bg-sky-500 rounded-md p-2 px-4 mt-4 text-white">
+            Buy
+          </button>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <h2 class="">Lolita Men $500</h2>
+          <p class="text-violet-600 font-[800]">Instock: 50 pieces</p>
+          <img src="parfum.jpeg" alt="parfum" class="w-80 rounded-md" />
+          <button class="bg-sky-500 rounded-md p-2 px-4 mt-4 text-white">
+            Buy
+          </button>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <h2 class="">Lolita Women $500</h2>
+          <p class="text-yellow-600 font-[900]">Instock: 320 pieces</p>
+          <img src="parfum.jpeg" alt="parfum" class="w-80 rounded-md" />
+          <button class="bg-sky-500 rounded-md p-2 px-4 mt-4 text-white">
+            Buy
+          </button>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer>
+        <div class="flex gap-6 bg-gray-500 mt-4 text-white p-2">
+          <a href="#">Products</a>
+          <a href="#">Collection</a>
+          <a href="#">Products</a>
+          <a href="#">Collection</a>
+          <a href="#">Products</a>
+          <a href="#">Collection</a>
+          <a href="#">Products</a>
+          <a href="#">Collection</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
